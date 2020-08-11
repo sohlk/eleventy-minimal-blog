@@ -1,0 +1,10 @@
+---
+layout: post-list.njk
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections.all
+  size: 3
+  reverse: true
+permalink: "{{ '/page-' ~ (pagination.pageNumber + 1) if pagination.pageNumber != 0 else ''  }}/index.html"
+summary: true
+---

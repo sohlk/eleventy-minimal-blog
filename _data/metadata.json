@@ -1,0 +1,18 @@
+{
+    "title": "sohlk's blog",
+    "subtitle": "sohlk's personal blog site",
+    "description": "sohlk's personal blog site",
+    "url": "https://sohlk.com",
+    "feedurl": "/feed.xml",
+    "links":{
+        "github": "https://github.com/sohlk"
+    },
+    "author": {
+        "name": "sohlk",
+        "email": "sohlk@outlook.com"
+    },
+    "nav": [
+        {"name": "Archive","url": "/archive" },
+        {"name": "About Me","url": "/about-me"}
+    ]
+}
