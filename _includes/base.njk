@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ metadata.title }}</title>
-    <meta name="description" content="{{ metadata.description }}">
-    <link rel="alternate" href="{{ metadata.feedurl }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <title>{{ metadata.title | safe }}</title>
+    <meta name="description" content="{{ metadata.description | safe }}">
+    <link rel="alternate" href="{{ metadata.feedurl }}" type="application/atom+xml" title="{{ metadata.title | safe }}">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/post-list.css">
     <link rel="stylesheet" href="/css/post-content.css">
@@ -14,7 +14,7 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1 id="title"><a href="{{ '/' }}">{{ metadata.title }}</a></h1>
+        <h1 id="title"><a href="{{ '/' }}">{{ metadata.title | safe }}</a></h1>
         <div id="nav">
         {% for item in metadata.nav -%}
           <a class="hover-bg" href="{{ item.url }}">{{ item.name }}</a>
