@@ -1,7 +1,8 @@
 ---
+title: About Me
 layout: post-content.njk
 eleventyExcludeFromCollections: true
-contact: false
+contactDisplay: false
 ---
 
 # About me

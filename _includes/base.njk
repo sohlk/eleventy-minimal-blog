@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title is defined %}
+    <title>{{ title ~ " - " ~ metadata.title | safe }}</title>
+    {% else %}
     <title>{{ metadata.title | safe }}</title>
+    {% endif %}
+    {% if summary is defined %}
+    <meta name="description" content="{{ summary | safe }}">
+    {% else %}
     <meta name="description" content="{{ metadata.description | safe }}">
+    {% endif %}
     <link rel="alternate" href="{{ metadata.feedurl }}" type="application/atom+xml" title="{{ metadata.title | safe }}">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/post-list.css">
