@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     excerpt_alias: 'summary'
   });
   eleventyConfig.addPassthroughCopy("assets/");
+  eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   return {
