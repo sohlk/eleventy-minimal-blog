@@ -15,11 +15,11 @@
     <div id="container">
       <div id="header">
         <h1 id="title"><a href="{{ '/' }}">{{ metadata.title }}</a></h1>
-        <ul id="nav">
+        <div id="nav">
         {% for item in metadata.nav -%}
-          <li><a class="hover-bg" href="{{ item.url }}">{{ item.name }}</a></li>
+          <a class="hover-bg" href="{{ item.url }}">{{ item.name }}</a>
         {% endfor -%}
-        </ul>
+        </div>
       </div>
 
       <div id="main">
