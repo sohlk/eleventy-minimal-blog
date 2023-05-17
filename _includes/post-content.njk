@@ -3,6 +3,7 @@ layout: base.njk
 ---
 
 <div class="post-content">
+  <h1>{{ title }}</h1>
   {{ content | safe }}
   {% if contactDisplay != false -%}
   <p>Want to leave a comment? Please <a href="/about-me">email</a> me</p>

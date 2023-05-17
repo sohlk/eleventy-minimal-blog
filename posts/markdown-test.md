@@ -3,8 +3,6 @@ title: Markdown Test
 date: 2020-08-11
 summary: This is a markdown test post
 ---
-# Markdown Test
-
 # h1 Heading
 ## h2 Heading
 ### h3 Heading

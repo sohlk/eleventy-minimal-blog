@@ -14,14 +14,14 @@
 }
 
 .post-content h1 {
-  font-size: 26px;
+  font-size: 30px;
   border-color: #e1e4e8;
   border-style: solid;
   border-width: 0 0 2px 0;
 }
 
 .post-content h2 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .post-content h3 {
@@ -50,7 +50,6 @@
 }
 
 .post-content p {
-  margin: 1.5em 0;
 }
 
 .post-content hr {
@@ -102,13 +101,12 @@
 .post-content pre {
   background-color: #fdf6e3;
   overflow: auto;
-  padding: 1em;
+  padding: 16px;
 }
 
 .post-content pre code {
   padding: initial;
   border-radius: initial;
-  font-size: 18px;
   background-color: transparent;
 }
 
