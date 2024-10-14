@@ -5,7 +5,8 @@
     "url": "https://sohlk.com",
     "feedurl": "/feed.xml",
     "links":{
-        "github": "https://github.com/sohlk"
+        "github": "https://github.com/sohlk",
+        "goodreads": "https://www.goodreads.com/user/show/120532689-sohlk"
     },
     "author": {
         "name": "sohlk",
