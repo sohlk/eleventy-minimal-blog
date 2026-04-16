@@ -1,6 +1,7 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-module.exports = function(eleventyConfig) {
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import SyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+
+export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
@@ -10,7 +11,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(SyntaxHighlight);
   return {
     dir: {
       input: ".",
@@ -25,3 +26,4 @@ module.exports = function(eleventyConfig) {
     ]
   };
 };
+
